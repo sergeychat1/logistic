@@ -1,0 +1,66 @@
+.about
+    padding-top: 100px
+    position: relative
+
+.about__bg
+    background-image: url('/img/simbol.svg')
+    background-repeat: no-repeat
+    background-position: bottom 10px right 60px
+    width: 100vw
+    min-width: 100vw
+
+.about__paragraph
+    color: #2C2C2C
+    font-family: Evolventa
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 175%
+    letter-spacing: 0.54px
+    padding-bottom: 16px
+
+.about__wrapper
+    max-width: 800px
+.about__image
+    width: 100%
+    max-width: 420px
+    min-height: 176px
+
+@media (max-width: 1780px)
+    .about__wrapper
+        max-width: 60%
+
+@media (max-width: 1530px)
+    .about__wrapper
+        max-width: 70%
+    .about__image
+        width: 100%
+        max-width: 320px
+        min-height: 136px
+
+@media (max-width: 1230px)
+    .about__wrapper
+        max-width: 70%
+
+@media (max-width: 1090px)
+    .dfr
+        flex-direction: column-reverse
+    .about__wrapper
+        padding-top: 50px
+        max-width: 100%
+    .bg__hide
+        background-image: none
+
+//////////////////////////////////////////////////////////////
+
+@media (max-width: 1530px)
+    .about__subtitle
+        padding-bottom: 30px
+    .about__title
+        padding-bottom: 16px
+
+@media (max-width: 375px)
+    .about__image
+        width: 100%
+        max-width: 250px
+        min-height: 96px

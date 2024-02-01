@@ -1,0 +1,223 @@
+.header
+  background-image: url("../img/main_img.webp")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 25% 75%
+  min-width: 100%
+  min-height: 100vh
+  display: flex
+  position: relative
+  &__inner
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__top
+    display: flex
+    // justify-content: space-between
+    padding-top: 32px
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__languages
+    display: flex
+    justify-content: space-between
+    margin-right: 80px
+  &__language
+    color: $main-text
+    font-size: 20px
+    font-weight: 700
+    line-height: 140%
+    letter-spacing: 0.4px
+  &__language:active
+    text-decoration-line: underline
+  &__phone
+    display: flex
+    margin-right: 80px
+  &__number
+    display: flex
+    flex-direction: column
+    color: $main-text
+    font-size: 28px
+    font-weight: 700
+    line-height: 130%
+    letter-spacing: 0.84px
+    &-text
+      color: $main-text
+      font-size: 16px
+      font-weight: 400
+      line-height: 155%
+      letter-spacing: 0.32px
+  &__main
+    padding-top: 30vh
+  &__title
+    padding-bottom: 56px
+    color: $main-text
+    font-size: 64px
+    font-style: normal
+    font-weight: 700
+    line-height: 115%
+    letter-spacing: 1.28px
+    max-width: 650px
+  &__subtitle
+    position: absolute
+    max-width: 70%
+    width: 70%
+    bottom: 76px
+    color: $main-text
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: 140%
+    letter-spacing: 0.4px
+    padding-right: 10px
+.logo
+  display: flex
+  align-items: center
+  color: $main-text
+  margin-right: auto
+  // margin-right: 160px
+  &__text
+    font-size: 37px
+    font-weight: 700
+    line-height: 170%
+    text-transform: uppercase
+  &__subtext
+    font-size: 14px
+    font-weight: 400
+    line-height: 115%
+    letter-spacing: 0.84px
+    margin-left: 12px
+
+.btn__arrow
+  padding-left: 20px
+
+.btn__calculate
+  display: flex
+  padding: 15px 30px 16px 30px
+  justify-content: center
+  align-items: center
+  border-radius: 10px
+  background: $main-text
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+.header__language + .header__language
+  margin-left: 15px
+
+.header__number + .header__number
+  margin-left: 64px
+
+.menu-button
+  width: 44px
+  height: 25px
+  display: flex
+  padding: 0
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  border: none
+  background-color: transparent
+  cursor: pointer
+  position: absolute
+  top: 50px
+  left: 28px
+  z-index: 999
+
+.menu-button__line
+  width: 100%
+  height: 2px
+  background-color: #FFFFFF
+  border-radius: 2px
+
+.header:after
+  content: " "
+  background: #fff
+  width: 1px
+  height: 100%
+  position: absolute
+  left: 100px
+
+@media (max-width: 1630px)
+  .header__phone
+    // margin-left: 30px
+    margin-right: 30px
+  .header__number
+    font-size: 20px
+  .header__number + .header__number
+    margin-left: 20px
+  .btn__calculate
+    padding: 15px 10px 16px 10px
+  .header__languages
+    margin-right: 30px
+  .header__language
+    font-size: 16px
+  .logo__subtext
+    font-size: 10px
+  .logo__text
+    font-size: 32px
+  .header__title
+    font-size: 50px
+    // max-width: 780px
+  .btn__calculate
+    font-size: 14px
+    padding: 10px 11px
+  .btn__arrow
+    padding-left: 5px
+
+// @media (max-width: 1500px)
+//   .menu-button
+//     top: 50px
+
+@media (max-width: 1230px)
+  .header__phone
+    display: none
+  .header:after
+    left: 80px
+  .menu-button
+    width: 30px
+    height: 22px
+    left: 25px
+
+@media (max-width: 830px)
+  .container
+    padding-left: 10px
+  .menu-button
+    top: 32px
+  .header:after
+    display: none
+  .header__top
+    padding-left: 45px
+    padding-top: 16px
+  .btn__calculate-header
+    display: none
+  .header__main
+    padding-top: 20vh
+  .header__languages
+    margin-right: 0
+  .header__subtitle
+    font-size: 14px
+
+@media (max-width: 530px)
+  .logo
+    flex-direction: column
+  .logo__subtext
+    align-self: flex-end
+    margin-top: -7px
+    text-align: right
+  .header__title
+    font-size: 36px
+  .logo__text
+    font-size: 26px
+  .menu-button
+    top: 26px
+  .header__subtitle
+    font-size: 12px
+
+  .header__languages
+    display: none
+
+// @media (min-width: 320px) and (max-width: 479px)
+//   .logo__text
+//     font-size: 22px
+//   .header__title
+//     font-size: 38px
